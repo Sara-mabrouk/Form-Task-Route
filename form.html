@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body style="background-color: black;">
+    <form action="">
+        <fieldset>
+            <legend style="color: rgb(0, 0, 0); background-color: yellow;">
+                Personal Data
+            </legend>
+            <br>
+            <fieldset>
+                <legend style="color: white;">
+                    Your Name
+                </legend>
+                <br>
+                <br>
+                <table style="color: white;">
+                    <tbody>
+                        <!-- First Name -->
+                        <tr>
+                            <td>
+                                <label for="FirstName">
+                                    First Name
+                                </label>
+                            <td>
+                                : <input type="text" id="FirstName">
+                            </td>
+                            </td>
+                        </tr>
+                        <!-- Last Name -->
+                        <tr>
+                            <td>
+                                <label for="Lastname">
+                                    Last Name
+                                </label>
+                            <td>
+                                : <input type="text" id="Lastname" >
+                            </td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <br>
+            <br>
+            <table style="color: white;">
+                <!-- Phone -->
+                <tr>
+                    <td>
+                        <label for="phone" >
+                            Your Phone
+                        </label>
+                    <td>
+                        : <input type="tel" id="phone" >
+                    </td>
+                    </td>
+                </tr>
+                <!-- E-mail -->
+                <tr>
+                    <td>
+                        <label for="email">
+                            Your Mail
+                        </label>
+                    <td>
+                        : <input type="email" id="email">
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Password And Re Password -->
+                    <td>
+                        <label for="pass"> Your password </label>
+                    <td>
+                        : <input type="password" id="pass" value>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Re-password"> Re-password </label>
+                    <td>
+                        : <input type="password" id="Re-password" value>
+                    </td>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <!-- Choose - Radio -->
+            <table style="color: white;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="Male">Male</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="Male" name="gender" value="Male"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Female">Female</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="Female" name="gender" value="Female">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <!-- Select checkbox -->
+            <table style="color: white;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="Student">Student</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="Student" value="Student" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="Graduate">Graduate</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="Graduate" value="Graduated" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <label style="color: white;" for=""> Choose Track: </label>
+            <select name="track" id="track">
+                <optgroup label="Front-End">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Bootstrap">Bootstrap</option>
+                    <option value="JavaScript">JavaScript</option>
+                </optgroup>
+                <optgroup label="Back-End">
+                    <option value="PHP">PHP</option>
+                    <option value="Laravel">Laravel</option>
+                    <option value="Nodejs">Nodejs</option>
+                    <option value="Angular">Angular</option>
+                </optgroup>
+                <optgroup label="UI-UX" disabled>
+                    <option value="Figma">Figma</option>
+                    <option value="ui">UI</option>
+                    <option value="ux">UX</option>
+
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <button type="submit" value="submit"> Submit</button>
+            <br>
+        </fieldset>
+    </form>
+</body>
+
+</html>
